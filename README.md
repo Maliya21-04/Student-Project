@@ -10,5 +10,7 @@
 <img width="2160" height="1356" alt="image" src="https://github.com/user-attachments/assets/b7641ba5-2c63-43ab-ac8b-6ecbaa65aedb" />
 
 Преподаватель:
-![Uploading image.png…]()
+<img width="2159" height="1356" alt="teacher_page" src="https://github.com/user-attachments/assets/46913ea5-f33a-4600-a05f-17e53542a09e" />
+
+
 
