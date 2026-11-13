@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Пользователи</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header class="header">
+    <div class="header-logo">Личный кабинет</div>
+    <div class="header-actions">
+        <span class="role-badge">Супер-администратор</span>
+        <button class="btn-logout" onclick="logout()">Выйти</button>
+    </div>
+</header>
+<main class="main-container">
+    <div class="page-title-row">
+        <div class="page-title">
+            <h1>Пользователи</h1>
+            <p>Все учетные записи системы</p>
+        </div>
+        <img src="/img/superadmin-guy.png" alt="Иллюстрация" class="illustration">
+    </div>
+    <div class="layout-grid">
+        <div class="table-container">
+            <table>
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Роль</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+        <div class="form-card">
+            <h3>Новый пользователь</h3>
+            <div class="form-group">
+                <label>Email</label>
+                <input id="uEmail" placeholder="example@email.com">
+            </div>
+            <div class="form-group">
+                <label>Пароль</label>
+                <input id="uPassword" type="password" placeholder="Введите пароль">
+            </div>
+            <div class="form-group">
+                <label>Роль</label>
+                <select id="uRole">
+                    <option value="TEACHER">Учитель</option>
+                    <option value="ADMIN">Администратор</option>
+                    <option value="SUPER_ADMIN">Супер-администратор</option>
+                </select>
+            </div>
+            <p id="formError" style="color: #ef4444; font-size: 13px; margin-top: 10px; margin-bottom: 0;"></p>
+            <button class="btn-primary" onclick="createUser()">Добавить</button>
+        </div>
+    </div>
+</main>
+<script src="/js/auth.js"></script>
+<script src="/js/users.js"></script>
+</body>
+</html>

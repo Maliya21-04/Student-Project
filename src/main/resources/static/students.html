@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Студенты</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header class="header">
+    <div class="header-logo">Личный кабинет</div>
+    <div class="header-actions">
+        <span class="role-badge" id="roleBadge">Загрузка...</span>
+        <button class="btn-logout" onclick="logout()">Выйти</button>
+    </div>
+</header>
+<main class="main-container">
+    <div class="page-title-row">
+        <div class="page-title">
+            <h1>Студенты</h1>
+            <p id="pageSubtitle">Управление списком студентов</p>
+        </div>
+        <img src="/img/admin-guy.png" alt="Иллюстрация" class="illustration" id="pageIllustration">
+    </div>
+    <div class="layout-grid">
+        <div class="table-container">
+            <table id="table">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Имя</th>
+                    <th>Фамилия</th>
+                    <th>Телефон</th>
+                    <th>Почта</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+        <div class="form-card" id="adminPanel" style="display: none;">
+            <h3>Новый студент</h3>
+            <div class="form-group">
+                <label>Имя</label>
+                <input id="sName" placeholder="Введите имя">
+            </div>
+            <div class="form-group">
+                <label>Фамилия</label>
+                <input id="sSurname" placeholder="Введите фамилию">
+            </div>
+            <div class="form-group">
+                <label>Почта</label>
+                <input id="sEmail" placeholder="example@email.com">
+            </div>
+            <div class="form-group">
+                <label>Телефон</label>
+                <input id="sPhone" placeholder="+7 (___) ___-__-__">
+            </div>
+            <p id="formError" style="color: #ef4444; font-size: 13px; margin-top: 10px; margin-bottom: 0;"></p>
+            <button class="btn-primary" onclick="createStudent()">Добавить</button>
+        </div>
+    </div>
+</main>
+<script src="/js/auth.js"></script>
+<script src="/js/students.js"></script>
+</body>
+</html>

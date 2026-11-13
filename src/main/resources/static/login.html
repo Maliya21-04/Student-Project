@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Вход в личный кабинет</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="login-body">
+<div class="login-card">
+    <div class="logo">Личный кабинет</div>
+    <h2>С возвращением</h2>
+    <p class="subtitle">Войдите в свою учетную запись</p>
+    <div class="form-group">
+        <label>Логин</label>
+        <input id="email" type="email" placeholder="example@email.com" value="admin@example.com">
+    </div>
+    <div class="form-group">
+        <label>Пароль</label>
+        <input id="password" type="password" placeholder="Введите пароль" value="admin">
+    </div>
+    <button class="btn-primary" onclick="login()">Войти</button>
+    <p id="error" style="color: #ef4444; font-size: 13px; text-align: center; margin-bottom: 20px; min-height: 16px;"></p>
+    <div class="demo-credentials">
+        <strong>Данные для входа</strong>
+        Логин / пароль<br>
+        superadmin@example.com / superAdmin<br>
+        admin@example.com / admin<br>
+        teacher@example.com / teacher
+    </div>
+</div>
+<script src="/js/auth.js"></script>
+</body>
+</html>
